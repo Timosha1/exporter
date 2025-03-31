@@ -2,10 +2,8 @@
 FROM prom/blackbox-exporter:latest
 
 # Копируем конфигурационный файл в образ
-COPY blackbox.yml /etc/blackbox.yml
-
-# Указываем, какой конфигурационный файл использовать (если отличается от стандартного)
-# По умолчанию Blackbox Exporter ищет файл /etc/blackbox.yml, поэтому эта строка может быть необязательной
+COPY blackbox.yml /etc/blackbox_exporter/
+# По умолчанию Blackbox Exporter ищет файл /etc/blackbox.yml но на всякий случай
 # CMD ["--config.file=/etc/blackbox.yml"]
 
 # Expose порт, на котором работает Blackbox Exporter (по умолчанию 9115)

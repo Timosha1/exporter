@@ -1,3 +1,4 @@
+---
 modules:
   aggregator-tokens:
     prober: http
@@ -6,7 +7,7 @@ modules:
       method: GET
       follow_redirects: true
       valid_status_codes:
-      - 200
+        - 200
   pools:
     prober: http
     timeout: 10s
@@ -14,7 +15,7 @@ modules:
       method: GET
       follow_redirects: true
       valid_status_codes:
-      - 200
+        - 200
   tvl-data:
     prober: http
     timeout: 10s
@@ -22,7 +23,7 @@ modules:
       method: GET
       follow_redirects: true
       valid_status_codes:
-      - 200
+        - 200
   widget-data:
     prober: http
     timeout: 10s
@@ -30,7 +31,7 @@ modules:
       method: GET
       follow_redirects: true
       valid_status_codes:
-      - 200
+        - 200
   backend-tokens:
     prober: http
     timeout: 10s
@@ -38,7 +39,7 @@ modules:
       method: GET
       follow_redirects: true
       valid_status_codes:
-      - 200
+        - 200
   usdplus-portfolio:
     prober: http
     timeout: 10s
@@ -46,7 +47,7 @@ modules:
       method: GET
       follow_redirects: true
       valid_status_codes:
-      - 200
+        - 200
   usdplus-collateral:
     prober: http
     timeout: 10s
@@ -54,7 +55,7 @@ modules:
       method: GET
       follow_redirects: true
       valid_status_codes:
-      - 200
+        - 200
   usdplus-payouts:
     prober: http
     timeout: 10s
@@ -62,7 +63,7 @@ modules:
       method: GET
       follow_redirects: true
       valid_status_codes:
-      - 200
+        - 200
   usdplus-total-supply:
     prober: http
     timeout: 10s
@@ -70,7 +71,7 @@ modules:
       method: GET
       follow_redirects: true
       valid_status_codes:
-      - 200
+        - 200
   xusd-portfolio:
     prober: http
     timeout: 10s
@@ -78,7 +79,7 @@ modules:
       method: GET
       follow_redirects: true
       valid_status_codes:
-      - 200
+        - 200
   xusd-payouts:
     prober: http
     timeout: 10s
@@ -86,7 +87,7 @@ modules:
       method: GET
       follow_redirects: true
       valid_status_codes:
-      - 200
+        - 200
   xusd-total-supply:
     prober: http
     timeout: 10s
@@ -94,7 +95,7 @@ modules:
       method: GET
       follow_redirects: true
       valid_status_codes:
-      - 200
+        - 200
   xusd-collateral:
     prober: http
     timeout: 10s
@@ -102,4 +103,4 @@ modules:
       method: GET
       follow_redirects: true
       valid_status_codes:
-      - 200
+        - 200
