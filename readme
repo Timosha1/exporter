@@ -1,0 +1,21 @@
+# Build Docker image
+The "docker build -t your_login_dockerhub/blackbox-exporter ." command is used to build
+a Docker image from a Dockerfile that is located in the current directory (.).
+
+# Container launch
+	# Win
+	docker run --rm ^
+	-p 9115:9115 ^
+	--name blackbox_exporter ^
+	-v “%cd%:/config” ^
+	quay.io/prometheus/blackbox-exporter:latest --config.file=/config/blackbox.yml
+
+	# Linux/macOS
+	docker run --rm \
+	-p 9115/tcp \
+	--name blackbox_exporter.
+	--v $(pwd):/config --
+	quay.io/prometheus/blackbox-exporter:latest --config.file=/config/blackbox.yml
+
+This exporter listens api status, api urls should be specified in static_configs/ targets in Prometheus Configuration
+file. https://github.com/prometheus/blackbox_exporter?tab=readme-ov-file#prometheus-configuration
